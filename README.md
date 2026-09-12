@@ -1,4 +1,4 @@
-Pagina Web Adidas (creada para el curso de CoderHouse).
+Pagina Web Vertic (creada para el curso de CoderHouse).
 5 paginas html (index, hombre, kids, mujer y futbol) 
 Se utilizo bootstrap para agregar cosas como acordion, scrollspy y carousel.
 
