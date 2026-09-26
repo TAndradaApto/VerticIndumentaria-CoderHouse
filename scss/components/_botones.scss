@@ -13,3 +13,25 @@
     color: v.$colorPrimario;
     border-color: v.$colorTerciario;
 }
+.boton-IrPagar{
+    display: flex;
+    width: 100%;
+    background-color: v.$colorTerciario;
+    border-radius: 10px;
+    justify-content: center;
+    color: v.$colorSecundario;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 4px #000000;
+}
+
+.boton-codPromocional{
+    display: flex;
+    width: 100%;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 4px #000000;
+    color: v.$colorPrimario;
+    text-decoration: underline;
+    font-weight: 900;
+    padding-left: 10px;
+}

@@ -27,6 +27,29 @@ body {
   border-color: #ff7300;
 }
 
+.boton-IrPagar {
+  display: flex;
+  width: 100%;
+  background-color: #ff7300;
+  border-radius: 10px;
+  justify-content: center;
+  color: #b1bdac;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 4px #000000;
+}
+
+.boton-codPromocional {
+  display: flex;
+  width: 100%;
+  background-color: #e9e9e9;
+  box-shadow: 5px 5px 4px #000000;
+  color: #1b1550;
+  text-decoration: underline;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
 /*Estas son las cards que utilizo en las paginas con productos*/
 .card {
   background-color: #1b1550;
@@ -46,7 +69,18 @@ body {
   border: 2px solid #1b1550;
 }
 .card_carrito img {
+  width: 90px;
   max-height: 250px;
+}
+@media (min-width: 768px) {
+  .card_carrito img {
+    width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .card_carrito img {
+    width: 250px;
+  }
 }
 .card_carrito h2 {
   text-decoration: underline;
@@ -257,11 +291,16 @@ por lo que esta seccion va a afectar a las pages: futbol, hombre, kids y mujer*/
 
 .mosaico_carrito {
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 1fr;
   color: #1b1550;
 }
+@media (min-width: 900px) {
+  .mosaico_carrito {
+    grid-template-columns: 6fr 4fr;
+  }
+}
 
-.columnaIzquierda {
+.columnaIzquierda, .columnaDerecha {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -305,6 +344,26 @@ Aca se declara la estructura que tendra, y en _cars.scss se le da el estilo*/
 }
 .card_carrito h3 {
   grid-area: precio;
+}
+
+.tituloCarrito {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.columnaDerecha article h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.listaMetodPagos {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.listaMetodPagos li img {
+  width: 100px;
+  height: 75px;
 }
 
 /*Footer de la web*/
