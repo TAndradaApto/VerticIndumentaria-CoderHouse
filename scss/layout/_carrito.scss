@@ -6,7 +6,8 @@
     display: grid;
     grid-template-columns: 1fr;
     color: v.$colorPrimario;
-    @media (min-width: 900px){
+    /*Para tablet y desktop la misma estructura*/
+    @media (min-width: 768px){
         grid-template-columns: 6fr 4fr;
     }
 }
@@ -15,7 +16,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 1rem 1.5rem;
+    margin: 0.5rem 1rem;
+    @media (min-width: 768px){
+        margin: 1rem 1.5rem;
+    }
 }
 
 
@@ -25,18 +29,19 @@
     box-shadow: 5px 5px 4px #000000;
     width: fit-content;
     
-    h2{
-        font-size: 1.1rem;
-    }
     p{
         font-size: 1rem;
+        &:first-child{
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
     }
 }
 /*Esta es la card que va a mostrar el producto que tengo agregado al carrito
 Aca se declara la estructura que tendra, y en _cars.scss se le da el estilo*/
 .card_carrito{
     display: grid;
-    grid-template-columns: 5fr 3fr 2fr;
+    grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas: 
         "image nombreProd botonElim"
         "image descripcion botonMeg"
@@ -52,12 +57,31 @@ Aca se declara la estructura que tendra, y en _cars.scss se le da el estilo*/
     }
     .boton-eliminar{
         grid-area: botonElim;
+        justify-self: right;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .boton-meGusta{
+        grid-area: botonMeg;
+        justify-self: right;
+        margin-right: 0.5rem;
     }
     p{
         grid-area: descripcion;
     }
     h3{
         grid-area: precio;
+        justify-self: right;
+        align-self: center;
+        margin-right: 0.5rem;
+    }
+
+    @media (min-width: 768px){
+        grid-template-columns: 5fr 3fr 2fr;
+        grid-template-areas: 
+         "image nombreProd botonElim"
+         "image descripcion botonMeg"
+         "image botonCant precio";
     }
 }
 

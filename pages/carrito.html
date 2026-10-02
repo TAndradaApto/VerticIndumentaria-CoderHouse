@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,13 @@
 
     <!--SEO-->
     <meta name="description" content="Vertic, finaliza la compra de aquellos productos que te gustaron y guardaste!!">
-    <meta name="keywords" content="Carrito Vertic, carro de compras vertic, vertic comprar, mis compras Vertic, pagar vertic">
     <meta name="author" content="Tobias Uriel Andrada Apto">
     <meta name="robots" content="noindex, nofollow">
 </head>
+
 <body>
     <header>
-         <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <!--LOGO DE MI SITIO-->
                 <a class="navbar-brand" href="../index.html">
@@ -49,7 +50,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img class="carrito" src="../assets/logo/carrito.png" alt="logo del carrito">
+                                <img class="carrito" src="../assets/logo/carrito.png" alt="icono del carrito de compras">
                             </a>
                         </li>
                     </ul>
@@ -64,31 +65,49 @@
                 <article>
                     <h1 class="tituloCarrito">TU CARRITO</h1>
                     <p>
-                        Los artículos en tu carrito no están reservados. Terminá el proceso de compra ahora para hacerte con ellos.
+                        Los artículos en tu carrito no están reservados. Terminá el proceso de compra ahora para hacerte
+                        con ellos.
                     </p>
                 </article>
                 <article class="infoCarrito">
-                    <h2>📍 RETIRÁ DONDE QUIERAS CON PICKIT | 💳 HASTA 6 CUOTAS SIN INTERÉS</h2>
+                    <p>📍 RETIRÁ DONDE QUIERAS CON PICKIT | 💳 HASTA 6 CUOTAS SIN INTERÉS</p>
                     <p>
                         ENVÍOS GRATIS EN COMPRAS DESDE $229.999🚚💨| Hasta 6 cuotas sin interés desde $149.999.
                     </p>
                 </article>
                 <article class="card_carrito">
-                    <img src="../assets/productos/zapatillasSambaMujer.jpg" alt="producto del carrito">
+                    <img src="../assets/productos/zapatillasSambaMujer.jpg" alt="zapatillas samba jane de mujer">
                     <h2>SAMBA JANE MUJER</h2>
                     <p>
                         color: marron y rosa. talle: 37
                     </p>
-                    <div class="boton-cantidad">
-
+                    <div class="dropdown boton-cantidad">
+                        <button class="btn btn-secondary dropdown-toggle btn-cantidad" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>
+                                1
+                            </p>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">...</a></li>
+                        </ul>
                     </div>
-                    <div class="boton-eliminar">
-
-                    </div>
+                    <a class="boton-eliminar" href="#">
+                        <figure>
+                            <img src="../assets/logo/logoTacho.png" alt="boton para eliminar con forma de tacho de basura">
+                        </figure>
+                    </a>
+                    <a class="boton-meGusta" href="#">
+                        <figure>
+                            <img src="../assets/logo/meGustaLogo.png" alt="boton de me gusta en forma de corazon">
+                        </figure>
+                    </a>
                     <h3>$250.000,00</h3>
                 </article>
             </section>
-           <section class="columnaDerecha">
+            <section class="columnaDerecha">
                 <article>
                     <h2 class="tituloCarrito">RESUMEN DEL PEDIDO</h2>
                     <p>
@@ -103,13 +122,13 @@
                     </p>
                 </article>
                 <article>
-                    <a class="boton-codPromocional">
+                    <a class="boton-codPromocional" href="#">
                         Usar puntos o codigo promocional📢
                     </a>
                 </article>
                 <article>
                     <a class="boton-IrPagar" href="#">
-                          Ir a pagar    🤑
+                        Ir a pagar 🤑
                     </a>
                 </article>
                 <article>
@@ -126,13 +145,72 @@
                         </li>
                     </ul>
                 </article>
-           </section> 
+            </section>
         </div>
     </main>
 
     <footer>
-
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Medios de Pago
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            Recibimos efectivo ofreciendo un descuento del 10% en todos los productos.
+                            Recibimos tarjetas de credito visa o mastercard ofreciendo 12 cuotas sin interes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Nuestras Redes
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="listaRedes">
+                            <li><a href="https://www.instagram.com/?hl=es" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li><a href="https://ar.pinterest.com/" target="_blank">Pinterest</a></li>
+                            <li><a href="https://x.com/?lang=es" target="_blank">X (twitter)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Devoluciones y Garantias
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            Tenemos una garantia en nuestros productos que oscilan desde los 6 meses hasta los 12 meses
+                            segun el producto.
+                            Las devoluciones seran aceptadas en un lapso de 20 dias tras la compra del producto, o tras
+                            ser recibido el producto en caso de ser comprado en nuestra pagina web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

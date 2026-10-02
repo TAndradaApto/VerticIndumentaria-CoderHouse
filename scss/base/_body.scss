@@ -2,4 +2,10 @@
 body{
     font-family: v.$tipografia;
     background-color: v.$colorSecundario;
+    
+
+    /*esto es para evitar el scroll horizontal de los titulos principales de las paginas*/
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }

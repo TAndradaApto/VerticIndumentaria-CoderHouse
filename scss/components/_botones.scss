@@ -1,4 +1,5 @@
 @use "../utilities/variables" as v;
+@use "sass:color";
 
 .btn-adidas {
     background-color: v.$colorSecundario;
@@ -23,6 +24,15 @@
     text-decoration: none;
     font-size: 1.5rem;
     box-shadow: 5px 5px 4px #000000;
+
+    &:hover{
+        background-color: color.adjust(v.$colorTerciario, $lightness: -15%);
+        transform: scale(1.05);
+    }
+    &:active{
+        background-color: v.$colorPrimario;
+        color: v.$colorTerciario;
+    }
 }
 
 .boton-codPromocional{
@@ -34,4 +44,33 @@
     text-decoration: underline;
     font-weight: 900;
     padding-left: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:active{
+        color: v.$colorTerciario;
+    }
+}
+
+.btn-cantidad{
+    background-color: v.$colorSecundario;
+    color: v.$colorPrimario;
+}
+
+/*Boton del tacho que es para eliminar un item del carrito*/
+.boton-eliminar, .boton-meGusta{
+    width: fit-content;
+    height: fit-content;
+    figure{
+        width: fit-content;
+        height: fit-content;
+        img{
+            width: 33px;
+        }
+    }
+    &:hover{
+        border: 1px v.$colorPrimario solid;
+        background-color: color.adjust(v.$colorSecundario, $lightness: -5%);
+    }
 }

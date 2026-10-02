@@ -29,15 +29,8 @@
 
     .tituloIndex{
         font-size: 2rem;
-        transition: 1s ease-in;
         margin-bottom: 2rem;
 
-        &:hover{
-            transform: scale(1.05);
-            text-decoration: underline;
-            margin: 30px auto;
-            text-shadow: 4px 4px 10px rgb(0, 0, 0);
-        }
         @media (min-width:1024px){
             font-size: 4rem;
         }
@@ -49,22 +42,7 @@
     background-color: v.$colorSecundario;
     img{
         width: 100%;
-        height: 400px;
+        height: auto;
         object-fit: cover;/* ← Recorta la imagen para llenar el espacio sin deformarse */
-    }
-}
-/*ScrollSpy*/
-#list-example{
-    .list-group-item{
-        text-align: center;
-        background-color: v.$colorSecundario;
-        border-color: v.$colorPrimario;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0);
-    }
-    .list-group-item-action{
-        &:hover{
-            background-color: v.$colorTerciario;
-            color: v.$colorPrimario;
-        }
     }
 }

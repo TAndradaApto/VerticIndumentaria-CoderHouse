@@ -18,14 +18,9 @@
 .card_carrito{
     border: 2px solid v.$colorPrimario;
     img{
-        width: 90px;
-        max-height: 250px;
-        @media (min-width: 768px){
-            width: 150px;
-        }
-        @media (min-width: 1024px){
-            width: 250px;
-        }
+         width: 100%;          /* ← Se adapta al ancho de su columna */
+        height: auto;         /* ← Mantiene la proporción */
+        max-width: 250px;     /* ← No crece más de 250px */
     }
     h2{
         text-decoration: underline;
